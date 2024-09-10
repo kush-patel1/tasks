@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import { Button } from "react-bootstrap";
 
+import sponge from "/Users/kushpatel/Downloads/tasks/src/image1.jpg";
+
 function App(): React.JSX.Element {
     return (
         <div className="App">
@@ -9,10 +11,7 @@ function App(): React.JSX.Element {
                 UD CISC275 with React Hooks and TypeScript | Kush Patel
             </header>
             <h1>Computer Science Fields</h1>
-            <img
-                src="/Users/kushpatel/Downloads/image1.jpg"
-                alt="A brain map of Computer Science"
-            />
+            <img src={sponge} alt="A brain map of Computer Science" />
             <p>Rankings are based on median salary. Highest to Lowest.</p>
             <p>
                 source:
