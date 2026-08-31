@@ -8,6 +8,7 @@
         "@testing-library/user-event": "^13.5.0",
         "@types/jest": "^27.5.2",
         "@types/node": "^16.18.105",
+        "bootstrap": "^5.3.8",
         "react": "^18.3.1",
         "react-bootstrap": "^2.10.4",
         "react-dom": "^18.3.1",
@@ -24,7 +25,9 @@
         "eject": "react-scripts eject",
         "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
         "eslint-output": "eslint-output ./src --ext .tsx --ext .ts --max-warnings 0",
-        "format": "prettier --config .prettierrc --write src/**/*.{ts,tsx}"
+        "format": "prettier --config .prettierrc --write src/**/*.{ts,tsx}",
+        "typecheck": "tsc --noEmit",
+        "check": "npm run typecheck && npm run lint && npm run format && npm run test -- --watchAll=false --coverage"
     },
     "eslintConfig": {
         "extends": [
